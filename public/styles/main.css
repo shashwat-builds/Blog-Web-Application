@@ -1,0 +1,86 @@
+body{
+    background-color: #FFF8DB;
+}
+header{
+    position:sticky;
+}
+pre {
+  white-space: pre-wrap;  
+  word-wrap: break-word;  
+  overflow: auto;
+}
+.head{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 200px auto;
+    border-radius:25px;
+}
+footer{
+    color:white;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    background-color:black;
+}
+
+.btn {
+  background: #000000;
+  margin:auto 650px;
+  background-image: -webkit-linear-gradient(top, #000000, #5c0505);
+  background-image: -moz-linear-gradient(top, #000000, #5c0505);
+  background-image: -ms-linear-gradient(top, #000000, #5c0505);
+  background-image: -o-linear-gradient(top, #000000, #5c0505);
+  background-image: linear-gradient(to bottom, #000000, #5c0505);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family:var(--bs-body-font-family);;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #000000);
+  background-image: -moz-linear-gradient(top, #000000, #000000);
+  background-image: -ms-linear-gradient(top, #000000, #000000);
+  background-image: -o-linear-gradient(top, #000000, #000000);
+  background-image: linear-gradient(to bottom, #000000, #000000);
+  text-decoration: none;
+  color:#ffffff;
+}
+.feedback-input {
+  color:#5c0505;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #3586ff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #3586ff;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#content{
+  margin-left: 5%;
+  margin-right: 5%;
+}

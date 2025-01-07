@@ -1,0 +1,25 @@
+<form id="clickForm" action="/content" method="POST">
+    <input type="hidden" id="clickedAnchor" name="clickedAnchor" value="">
+</form>
+<% if(locals.name){ %>
+    <ul>
+    <% for(let i=0;i<name.length;i++){ %>
+        <li><a class="blog" href="#"><%= name[i] %> </a></li>
+        <% } %>
+    </ul><br>
+<% }else{ %>
+    <h3>No Blogs to display</h3>
+    <br>
+<% } %>
+
+<script>
+    var a=document.querySelectorAll(".blog");
+    for(let i=0;i<a.length;i++){
+        a[i].addEventListener("click",function(event){
+            event.preventDefault();
+            var clickedBlog = this.innerHTML;
+            document.querySelector('#clickedAnchor').value = clickedBlog;
+            document.querySelector('#clickForm').submit();
+        });
+    }
+</script>

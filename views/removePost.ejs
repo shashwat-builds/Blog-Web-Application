@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+<% if(locals.name){ %>
+    <form id="clickForm" action="/rdPost" method="POST">
+        <select id="blogs" name="blogs">
+    <% for(let i=0;i<name.length;i++){ %>
+            <option value="<%= name[i] %>"><%= name[i] %></option>
+        <% } %>
+        </select>
+        <input type="submit" class="btn" value="REMOVE">
+    </form>
+<% }else{ %>
+    <h3>No Blogs to remove</h3>
+    <br>
+<% } %>
+<%- include('partials/footer.ejs') %>

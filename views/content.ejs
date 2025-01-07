@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+    <div id="content">
+        <div id="contenth">
+            <% if(locals.name){ %>
+                <h1>
+                    <%= name %>
+                </h1>
+                <% } %>
+        </div>
+        <pre>
+        <div id="contentd">
+            <%= data %>
+        </div>
+        </pre>
+    </div>
+    <%- include('partials/footer.ejs') %>
